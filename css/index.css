@@ -1,0 +1,14 @@
+#desc-halfbg-text-8 .bg-wrap {
+    background-color: #f4f5f6;
+}#action-halfbg-text-btn .bg-wrap {
+    background-color: #debcce;
+}
+
+#action-img-text .bg-wrap {
+    background-color: #ffbd00;
+}#footer-logo-share .bg {
+    background-image: url('../images/bg-sign.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    opacity: 0.075;
+}

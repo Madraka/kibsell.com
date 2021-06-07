@@ -1,130 +1,907 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-           <meta charset="UTF-8">
-           <title>index</title>
-           
-           <meta name="keywords" content="" />
-           <meta name="description" content="" />
-           <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
-		<link rel="stylesheet" href="css/fonts.css" />
-		<link rel="stylesheet" href="css/bootstrap.weber.css" />
-		<link rel="stylesheet" href="css/fx.css" />
-		<link rel="stylesheet" href="css/magnific-popup.css" />
-           <link rel="stylesheet" href="css/custom.css" />
-		<link rel="stylesheet" href="css/index.css" />
+<!DOCTYPE html><html lang="en"><head><style id="ace-merbivore-soft">.ace-merbivore-soft .ace_gutter {background: #262424;color: #E6E1DC}.ace-merbivore-soft .ace_print-margin {width: 1px;background: #262424}.ace-merbivore-soft {background-color: #1C1C1C;color: #E6E1DC}.ace-merbivore-soft .ace_cursor {color: #FFFFFF}.ace-merbivore-soft .ace_marker-layer .ace_selection {background: #494949}.ace-merbivore-soft.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px #1C1C1C;}.ace-merbivore-soft .ace_marker-layer .ace_step {background: rgb(102, 82, 0)}.ace-merbivore-soft .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid #404040}.ace-merbivore-soft .ace_marker-layer .ace_active-line {background: #333435}.ace-merbivore-soft .ace_gutter-active-line {background-color: #333435}.ace-merbivore-soft .ace_marker-layer .ace_selected-word {border: 1px solid #494949}.ace-merbivore-soft .ace_invisible {color: #404040}.ace-merbivore-soft .ace_entity.ace_name.ace_tag,.ace-merbivore-soft .ace_keyword,.ace-merbivore-soft .ace_meta,.ace-merbivore-soft .ace_meta.ace_tag,.ace-merbivore-soft .ace_storage {color: #FC803A}.ace-merbivore-soft .ace_constant,.ace-merbivore-soft .ace_constant.ace_character,.ace-merbivore-soft .ace_constant.ace_character.ace_escape,.ace-merbivore-soft .ace_constant.ace_other,.ace-merbivore-soft .ace_support.ace_type {color: #68C1D8}.ace-merbivore-soft .ace_constant.ace_character.ace_escape {color: #B3E5B4}.ace-merbivore-soft .ace_constant.ace_language {color: #E1C582}.ace-merbivore-soft .ace_constant.ace_library,.ace-merbivore-soft .ace_string,.ace-merbivore-soft .ace_support.ace_constant {color: #8EC65F}.ace-merbivore-soft .ace_constant.ace_numeric {color: #7FC578}.ace-merbivore-soft .ace_invalid,.ace-merbivore-soft .ace_invalid.ace_deprecated {color: #FFFFFF;background-color: #FE3838}.ace-merbivore-soft .ace_fold {background-color: #FC803A;border-color: #E6E1DC}.ace-merbivore-soft .ace_comment,.ace-merbivore-soft .ace_meta {font-style: italic;color: #AC4BB8}.ace-merbivore-soft .ace_entity.ace_other.ace_attribute-name {color: #EAF1A3}.ace-merbivore-soft .ace_indent-guide {background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWOQkpLyZfD09PwPAAfYAnaStpHRAAAAAElFTkSuQmCC) right repeat-y}
+/*# sourceURL=ace/css/ace-merbivore-soft */</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style id="ace_editor.css">.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}.ace_editor {position: relative;overflow: hidden;padding: 0;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;text-align: left;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;box-sizing: border-box;min-width: 100%;contain: style size layout;font-variant-ligatures: no-common-ligatures;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;contain: style size layout;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {position: absolute;top: 0;left: 0;right: 0;padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {contain: strict;position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;contain: strict;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: transparent;color: inherit;z-index: 1000;opacity: 1;}.ace_composition_placeholder { color: transparent }.ace_composition_marker { border-bottom: 1px solid;position: absolute;border-radius: 0;margin-top: 1px;}[ace_nocontext=true] {transform: none!important;filter: none!important;clip-path: none!important;mask : none!important;contain: none!important;perspective: none!important;mix-blend-mode: initial!important;z-index: auto;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;height: 1000000px;contain: style size layout;}.ace_text-layer {font: inherit !important;position: absolute;height: 1000000px;width: 1000000px;contain: style size layout;}.ace_text-layer > .ace_line, .ace_text-layer > .ace_line_group {contain: style size layout;position: absolute;top: 0;left: 0;right: 0;}.ace_hidpi .ace_text-layer,.ace_hidpi .ace_gutter-layer,.ace_hidpi .ace_content,.ace_hidpi .ace_gutter {contain: strict;will-change: transform;}.ace_hidpi .ace_text-layer > .ace_line, .ace_hidpi .ace_text-layer > .ace_line_group {contain: strict;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_hasPlaceholder .ace_hidden-cursors .ace_cursor {opacity: 0;}.ace_smooth-blinking .ace_cursor {transition: opacity 0.18s;}.ace_animate-blinking .ace_cursor {animation-duration: 1000ms;animation-timing-function: step-end;animation-name: blink-ace-animate;animation-iteration-count: infinite;}.ace_animate-blinking.ace_smooth-blinking .ace_cursor {animation-duration: 1000ms;animation-timing-function: ease-in-out;animation-name: blink-ace-animate-smooth;}@keyframes blink-ace-animate {from, to { opacity: 1; }60% { opacity: 0; }}@keyframes blink-ace-animate-smooth {from, to { opacity: 1; }45% { opacity: 1; }60% { opacity: 0; }85% { opacity: 0; }}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_error_bracket {position: absolute;border-bottom: 1px solid #DE5555;border-radius: 0;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;box-sizing: border-box;}.ace_line .ace_fold {box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_inline_button {border: 1px solid lightgray;display: inline-block;margin: -1px 8px;padding: 0 5px;pointer-events: auto;cursor: pointer;}.ace_inline_button:hover {border-color: gray;background: rgba(200,200,200,0.2);display: inline-block;pointer-events: auto;}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_mobile-menu {position: absolute;line-height: 1.5;border-radius: 4px;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;background: white;box-shadow: 1px 3px 2px grey;border: 1px solid #dcdcdc;color: black;}.ace_dark > .ace_mobile-menu {background: #333;color: #ccc;box-shadow: 1px 3px 2px grey;border: 1px solid #444;}.ace_mobile-button {padding: 2px;cursor: pointer;overflow: hidden;}.ace_mobile-button:hover {background-color: #eee;opacity:1;}.ace_mobile-button:active {background-color: #ddd;}.ace_placeholder {font-family: arial;transform: scale(0.9);transform-origin: left;white-space: pre;opacity: 0.7;margin: 0 10px;}
+/*# sourceURL=ace/css/ace_editor.css */</style>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Kibsell: İkinci El Araba,Ev Telefon Alım ve Satım</title>
+    <!-- Favicons -->
+    <link href="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/img/favicon.png" rel="icon">
+    <link href="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/vendor/aos/aos.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/css/style.css" rel="stylesheet">
+    <!-- =======================================================
+  * Template Name: Bootslander - v2.2.0
+  * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+    <meta name="keywords" content="kibsell, sahibinden,  Elektronik, Giyim ve Aksesuar, Ev ve Dekorasyon, Araba, Ev, Bebek, Bakım ve Güzellik, Hobi ve Koleksiyon, Kitap, Film ve Müzik, Spor, El İşi, Telefon, laptop,">
+    <meta name="description" content="Kibsell İkinci el Pazar Yerinde satılık, kiralık, sıfır, araba, Ev, Elektronik ürünler  kibsell'de  Hemen yükle ">
+    
+    
+<style type="text/css">div.eapps-widget{position:relative}div.eapps-widget.eapps-widget-show-toolbar:before{position:absolute;content:"";display:block;bottom:0;top:0;left:0;right:0;pointer-events:none;border:1px solid transparent;transition:border .3s ease;z-index:1}.eapps-widget-toolbar{position:absolute;top:-32px;left:0;right:0;display:block;z-index:99999;padding-bottom:4px;transition:all .3s ease;pointer-events:none;opacity:0}.eapps-widget:hover .eapps-widget-toolbar{opacity:1;pointer-events:auto}.eapps-widget-toolbar a{text-decoration:none;box-shadow:none!important}.eapps-widget-toolbar-panel{border-radius:6px;background-color:#222;color:#fff;display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;align-items:center;top:0;position:relative;transition:all .3s ease;opacity:0;overflow:hidden;-webkit-backface-visibility:hidden;backface-visibility:hidden;box-shadow:0 0 0 1px hsla(0,0%,100%,.2);height:28px}.eapps-widget:hover .eapps-widget-toolbar-panel{opacity:1}.eapps-widget-toolbar-panel-wrapper{width:100%;position:relative}.eapps-widget-toolbar-panel-only-you{position:absolute;top:-24px;font-size:11px;line-height:14px;color:#9c9c9c;padding:5px 4px}.eapps-widget-toolbar-panel-logo{width:28px;height:28px;border-right:1px solid hsla(0,0%,100%,.2);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}.eapps-widget-toolbar-panel-logo svg{display:block;width:15px;height:15px;fill:#f93262}.eapps-widget-toolbar-panel-edit{font-size:12px;font-weight:400;line-height:14px;display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;align-items:center;padding:9px;border-right:1px solid hsla(0,0%,100%,.2);color:#fff;text-decoration:none}.eapps-widget-toolbar-panel-edit-icon{width:14px;height:14px;margin-right:8px}.eapps-widget-toolbar-panel-edit-icon svg{display:block;width:100%;height:100%;fill:#fff}.eapps-widget-toolbar-panel-views{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}.eapps-widget-toolbar-panel-views-label{font-size:12px;font-weight:400;line-height:14px;margin-left:8px}.eapps-widget-toolbar-panel-views-bar{display:-ms-inline-flexbox;display:inline-flex;width:70px;height:3px;border-radius:2px;margin-left:8px;background-color:hsla(0,0%,100%,.3)}.eapps-widget-toolbar-panel-views-bar-inner{border-radius:2px;background-color:#4ad504}.eapps-widget-toolbar-panel-views-green .eapps-widget-toolbar-panel-views-bar-inner{background-color:#4ad504}.eapps-widget-toolbar-panel-views-red .eapps-widget-toolbar-panel-views-bar-inner{background-color:#ff4734}.eapps-widget-toolbar-panel-views-orange .eapps-widget-toolbar-panel-views-bar-inner{background-color:#ffb400}.eapps-widget-toolbar-panel-views-percent{display:-ms-inline-flexbox;display:inline-flex;margin-left:8px;margin-right:8px;font-size:12px;font-weight:400;line-height:14px}.eapps-widget-toolbar-panel-views-get-more{padding:9px 16px;background-color:#f93262;color:#fff;font-size:12px;font-weight:400;border-radius:0 6px 6px 0}.eapps-widget-toolbar-panel-share{position:absolute;top:0;display:inline-block;margin-left:8px;width:83px;height:28px;padding-bottom:4px;box-sizing:content-box!important}.eapps-widget-toolbar-panel-share:hover .eapps-widget-toolbar-panel-share-block{opacity:1;pointer-events:all}.eapps-widget-toolbar-panel-share-button{padding:0 18px;height:28px;background-color:#1c91ff;color:#fff;font-size:12px;font-weight:400;border-radius:6px;position:absolute;top:0;display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;cursor:default;-ms-flex-align:center;align-items:center}.eapps-widget-toolbar-panel-share-button svg{display:inline-block;margin-right:6px;fill:#fff;position:relative;top:-1px}.eapps-widget-toolbar-panel-share-block{position:absolute;background:#fff;border:1px solid hsla(0,0%,7%,.1);border-radius:10px;width:209px;top:32px;transform:translateX(-63px);opacity:0;pointer-events:none;transition:all .3s ease;box-shadow:0 4px 6px rgba(0,0,0,.05)}.eapps-widget-toolbar-panel-share-block:hover{opacity:1;pointer-events:all}.eapps-widget-toolbar-panel-share-block-text{color:#111;font-size:15px;font-weight:400;padding:12px 0;text-align:center}.eapps-widget-toolbar-panel-share-block-text-icon{padding-bottom:4px}.eapps-widget-toolbar-panel-share-block-actions{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;border-top:1px solid hsla(0,0%,7%,.1)}.eapps-widget-toolbar-panel-share-block-actions-item{width:33.333333%;display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center;height:39px;transition:all .3s ease;background-color:transparent}.eapps-widget-toolbar-panel-share-block-actions-item:hover{background-color:#fafafa}.eapps-widget-toolbar-panel-share-block-actions-item a{width:100%;height:100%;display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}.eapps-widget-toolbar-panel-share-block-actions-item-icon{width:16px;height:16px;display:block}.eapps-widget-toolbar-panel-share-block-actions-item-facebook .eapps-widget-toolbar-panel-share-block-actions-item-icon{fill:#3c5a9b}.eapps-widget-toolbar-panel-share-block-actions-item-twitter .eapps-widget-toolbar-panel-share-block-actions-item-icon{fill:#1ab2e8}.eapps-widget-toolbar-panel-share-block-actions-item-google .eapps-widget-toolbar-panel-share-block-actions-item-icon{fill:#dd4b39}.eapps-widget-toolbar-panel-share-block-actions-item:not(:last-child){border-right:1px solid hsla(0,0%,7%,.1)}</style><script src="https://static.elfsight.com/apps/social-feed/release/9159268f-6f84-4e43-a9da-df0807247ce4/app/socialFeed.js" defer="defer"></script><style>.eapp-social-feed-root-layout-component{position:relative;width:100%;-webkit-font-smoothing:antialiased}.eapp-social-feed-root-layout-component,.eapp-social-feed-root-layout-component *{box-sizing:border-box !important;outline:none !important}.eapp-social-feed-root-layout-component a{text-decoration:none}.eapp-social-feed-root-layout-component a:hover,.eapp-social-feed-root-layout-component a:focus{text-decoration:underline}</style><style data-styled="active" data-styled-version="5.3.0"></style><link rel="stylesheet" href="css/custom_elements.css?63LsfUyb" id="custom-elements-css"><link rel="stylesheet" href="css/code_editor_styles.css?KfuXHExz" id="custom-css"></head>
 
-       </head>
-           <body class="light-page">
-		<div id="wrap">
-			<nav id="nav-menu-btn" class="navbar navbar-expand-lg light shadow border-bottom-container sticky-top fixed-top" style="">
-    			<div class="container">
-        			<div class="row align-items-center">
-            			<div class="col-auto hidden-lg">
-                			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".main-menu-collapse" aria-controls="navbarMenuContent" aria-expanded="false" aria-label="Toggle navigation" style=""><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            			</div>
-            			<div class="col-auto ml-auto order-lg-2">
-                			<div class="btn-group d-inline-flex">
-                    			<a class="btn btn-lg fx-btn-blick btn-danger smooth" href="http://onelink.to/kibsell" style="" target="_self"><strong class="">HEMEN İNDİR</strong></a>
-                			</div>
-            			</div>
-            			<div class="col-lg-auto collapse navbar-collapse main-menu-collapse order-lg-1">
-                			<ul class="navbar-nav" style="">
-                    			<li class="nav-item">
-                        			<a class="nav-link" href="#" style=""><strong>ANASAYFA</strong></a>
-                    			</li>
-                    			<li class="nav-item">
-                        			<a class="nav-link smooth" href="hakkımızda.html#nav-menu-btn" style="" target="_self"><strong class="">HAKKIMIZDA</strong></a>
-                    			</li>
-                    			<li class="nav-item">
-                        			<a class="nav-link smooth" href="gizlilikpolitikasi.html#nav-menu-btn" style="" target="_self"><strong class="">GİZLİLİK POLİTİKASI</strong></a>
-                    			</li>
-                    			<li class="nav-item">
-                        			<a class="nav-link smooth" href="i̇letişim.html#nav-menu-btn" target="_self"><strong>İLETİŞİM</strong></a>
-                    			</li>
-                    
-                			</ul>
-            			</div>
-        			</div>
-    			</div>
-    			<div class="bg-wrap">
-        			<div class="bg"></div>
-    			</div>
-			</nav><section id="desc-halfbg-text-8" class="pb-50 pb-md-150 pt-md-150 pb-lg-200 pt-lg-200 overall light">
-    			<div class="container">
-        			<div class="row">
-            			<div class="bg-box shadow col-md-5 mb-50 mb-md-0 mt-md-75 mt-lg-150 embed-responsive-16by9" style="background-image: url(images/mockup-desktop-screen-2.png); background-position: right top; background-size: cover;">
-                			<img class="shadow" src="images/mockup-mobile-screen-dark.png" alt="image" height="90%" style="position: absolute; top:20%; right: -30px;" srcset="">
-            			</div>
-            			<div class="col-md-5 ml-auto" style="">
-                			<h3 class="" style=""><strong class="">Kibsell: İkinci El Araba, Emlak Telefon Al ve Sat</strong></h3>
-                			<svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 100 20" width="100" class="mb-30 svg-secondary"><path d="m0 9h100v2h-100z" fill-rule="evenodd"></path></svg>
-                			<p class="" style="">Kibsell, ikinci el ürün almak ve satmanın en hızlı ve en kolay yolu. Milyonlarca insan Kibsell'yu çoktan indirip kullanmaya başladı bile. Nasıl olduğunu öğren.</p>
-            			</div>
-        			</div>
-    			</div>
-    			<div class="bg-wrap">
-        			<div class="bg"></div>
-    			</div>
-			</section><section id="action-halfbg-text-btn" class="pb-50 pt-md-100 pb-md-100 dark text-center">
-    			<div class="container-fluid">
-        			<div class="row">
-            			<div class="bg-box col-sm-6 mb-50 mb-md-0 embed-responsive-16by9" style="background-image: url(images/bg-74.jpg); background-position: center center; background-size: cover;">
-            			</div>
-            			<div class="col-md-6 ml-auto" style="">
-                			<h3 class="mb-30" style=""><b class=""><strong>Pazar Yerini Keşfedin</strong></b></h3>
-                			<a href="http://onelink.to/kibsell" class="btn btn-lg btn-info smooth" style="" target="_self"><strong class="">ŞİMDİ KEŞFET</strong></a>
-            			</div>
-        			</div>
-    			</div>
-    			<div class="bg-wrap">
-        			<div class="bg"></div>
-    			</div>
-			</section><section id="action-img-text" class="pt-50 pb-md-50 overall text-center dark">
-    			<div class="container">
-        			<div class="row align-items-center">
-            			<div class="col-md ml-auto order-md-2" style="">
-                			<h2 class="mb-30" style=""><b>Hemen indir satışa başla</b></h2>
-                			<a href="images/btn-google@2x.png 2x" alt="" class=""></a>
-            			</div>
-            			<div class="col-md-auto order-md-1">
-                			<div class="content-box d-inline-block">
-                    			<img alt="img" class="mw-100 mt-50 mt-md--100 mb-md--50" src="images/mockup-iphone-half.png" width="250px">
-                			</div>
-            			</div>
-        			</div>
-    			</div>
-    			<div class="bg-wrap">
-        			<div class="bg"></div>
-    			</div>
-			</section><footer id="footer-logo-share" class="pt-50 pb-50 dark">
-    			<div class="container">
-        			<div class="row align-items-center">
-            			<div class="col-md order-md-2 text-lg-right">
-                			<a href="#" class="goodshare btn btn-sm btn-fb smooth" data-type="fb" target="_self"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon icon-pos-left dark svg-default"><path d="m8.54611842 16h-7.66304125c-.48785295 0-.88307717-.3954695-.88307717-.8831324v-14.23379728c0-.48778708.3952863-.88307032.88307717-.88307032h14.23390773c.4876667 0 .8830151.39528324.8830151.88307032v14.23379728c0 .487725-.3954105.8831324-.8830151.8831324h-4.0772165v-6.19608178h2.0797387l.3114113-2.41472301h-2.39115v-1.54164808c0-.69911803.1941355-1.1755439 1.1966615-1.1755439l1.2786739-.00055875v-2.15974763c-.2211418-.0294274-.980176-.09517343-1.8632531-.09517343-1.84357263 0-3.10573228 1.12531866-3.10573228 3.19187953v1.78079226h-2.08507782v2.41472301h2.08507782z" fill="#4460a0" fill-rule="evenodd"></path></svg>Share</a><a href="#" class="goodshare btn btn-sm btn-tw" data-type="tw"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon icon-pos-left dark svg-default"><path d="m16 2.57842783c-.5878969.26772602-1.2208722.44877814-1.8848389.52967377.6780537-.41603467 1.1983331-1.07571927 1.4434466-1.86156254-.6348535.38521729-1.3363855.66546287-2.0858132.81569761-.5972882-.65390635-1.4509597-1.06223667-2.3957269-1.06223667-1.81158659 0-3.28132891 1.50716263-3.28132891 3.36583604 0 .26387384.02817397.52004334.08452192.7665824-2.72817984-.14060431-5.14644597-1.47923438-6.76644949-3.51799687-.28267888.49885639-.44420966 1.07764536-.44420966 1.69399302 0 1.16720838.57944473 2.19766462 1.460351 2.80149272-.53718378-.01637174-1.04431532-.16949561-1.48758585-.41988685v.04141086c0 1.63139521 1.13165464 2.99217528 2.6342666 3.30034911-.27516582.07896954-.56535775.11845431-.86494101.11845431-.21130481 0-.41791395-.02022391-.61794917-.05970868.41791395 1.33670394 1.62939485 2.31034064 3.06626754 2.33634284-1.12320245.9033345-2.53941422 1.4416757-4.07677408 1.4416757-.26483536 0-.52685332-.0154087-.78323649-.0462261 1.45283794.9534128 3.17896343 1.5110148 5.03187181 1.5110148 6.03862179 0 9.33967249-5.12820509 9.33967249-9.57650171 0-.14638257-.0028174-.29276514-.0084522-.43625858.6414275-.47478031 1.198333-1.06705188 1.6369079-1.74214518" fill="#00aaec" fill-rule="evenodd"></path></svg>Tweet</a><a href="#" class="goodshare btn btn-sm btn-gp" data-type="gp"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 23 16" width="23" class="icon icon-pos-left dark svg-default"><path d="m20.5786164 6.75247525v-2.42574258h-1.7295598v2.42574258h-2.490566v1.73267326h2.490566v2.49504949h1.7295598v-2.49504949h2.4213836v-1.73267326zm-12.59119502-.13861386v2.77227722s2.68455342-.00360396 3.77763522-.00360396c-.5919245 1.79719805-1.512327 2.77588115-3.77763522 2.77588115-2.29249685 0-4.081761-1.861792-4.081761-4.1584158 0-2.29662376 1.78926415-4.15841584 4.081761-4.15841584 1.21207548 0 1.99487422.42679208 2.71291822 1.02165346.5747673-.57580198.5267547-.65786138 1.9890629-2.04129703-1.2413396-1.13192079-2.89120124-1.82194059-4.70198112-1.82194059-3.85906289 0-6.98742138 3.1339901-6.98742138 7 0 3.8659406 3.12835849 7 6.98742138 7 5.76822012 0 7.17808802-5.03168317 6.71069182-8.38613861z" fill="#dd4b39" fill-rule="evenodd"></path></svg>Share</a><a href="#" class="goodshare btn btn-sm btn-li" data-type="li"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon icon-pos-left dark svg-default"><path d="m16 15.5454545h-3.5362183v-5.1133089c0-1.3384016-.5531514-2.25209123-1.7695202-2.25209123-.93038568 0-1.44778925.61657751-1.6886171 1.21080175-.09031044.21328738-.07619943.5103995-.07619943.80751158v5.3470868h-3.50329257s.04515522-9.05772842 0-9.88107361h3.50329257v1.55075762c.20696143-.67804897 1.32643463-1.64575899 3.11288803-1.64575899 2.2163688 0 3.957667 1.42129498 3.957667 4.48182928zm-14.11665099-11.11702278h-.02257761c-1.12888052 0-1.8607714-.75535401-1.8607714-1.71281878 0-.97609249.75352775-1.71561294 1.90498589-1.71561294 1.1505174 0 1.8579492.73765768 1.88052681 1.71281878 0 .95746477-.73000941 1.71561294-1.90216369 1.71561294zm-1.47977422 1.23594917h3.11853245v9.88107361h-3.11853245z" fill="#007ebb" fill-rule="evenodd"></path></svg>Share</a>
-            			</div>
-            			<div class="col-md order-md-1 d-flex align-items-center">
-                			<img class="mw-100 mr-30" src="images/logo-1-light.png" height="60px" alt="logo">
-                			<p class="mb-0">© kibsell.com&nbsp;<br>All rights reserved.</p>
-            			</div>
-        			</div>
-    			</div>
-    			<div class="bg-wrap">
-        			<div class="bg"></div>
-    			</div>
-			</footer>
-		</div>
-		<footer></footer>
-		<div class="modal-container"></div>
-		
-		
-		<script src="https://maps.googleapis.com/maps/api/js?key="></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-		<script src="js/jquery-2.1.4.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/jquery.smooth-scroll.min.js"></script>
-		<script src="js/custom.js"></script>
-		<script src="js/index.js"></script>
-	</body>
-</html>
+<body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0" class="" style="background-image: linear-gradient(rgb(255, 48, 25) 0%, rgb(207, 4, 4) 100%);"><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent" style="background-color: rgb(0, 0, 0);">
+        <div class="container d-flex align-items-center">
+            <div class="logo mr-auto">
+                <h1 class="text-light"><a href="index.html"><span>Kibsell</span></a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            </div>
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="index.html">KEŞFET</a></li>
+                    <li class=""><a href="#about">HAKKIMIZDA</a></li>
+                    <li class=""></li>
+                    <li></li>
+                    <li></li>
+                    <li class=""><a href="#pricing">PAKETLER</a></li>
+                    <li class="drop-down">
+                        <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li class="drop-down"><a href="#">Drop Down 2</a>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                            <li><a href="#">Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="#contact">İLETİŞİM</a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </header><!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" style="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+                    <div data-aos="zoom-out" class="" style="">
+                        <h1>
+                            <div style="text-align: center;"><span style="color: rgba(255, 255, 255, 0.8);">
+                                    <div style="text-align: left;" class=""><span style="color: rgba(255, 255, 255, 0.8);" class="">
+                                            <h1>Şehrinizin Alım Satım&nbsp;<div>Uygulaması 'Kibsell'<div style="text-align: center;">
+                                                        <div style="text-align: left;">
+                                                            <font size="2" style="background-color: initial; max-width: none; max-height: none; width: 387.366px; height: 25.5398px;">Kibsell Pazar yerine katılın ve alıcı ve satıcıları keşfedin&nbsp; &nbsp;&nbsp;</font><img src="https://flyreklam.s3.eu-central-1.amazonaws.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/images/4EVVHl2b6ZwSuRhfbmtdvNo2vbwnAICoHAJx3sTB.png" class="img-fluid" alt="" style="background-color: initial; font-size: 1rem; max-width: none; max-height: none; width: 102px; height: 76.7286px;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </h1>
+                                        </span></div>
+                                </span></div>
+                            <div style="text-align: center;">
+                                <div style="text-align: left;" class=""><span style="color: rgba(255, 255, 255, 0.8);"></span></div>
+                            </div>
+                        </h1>
+                        <h2><b>
+                                <font size="2" style="max-width: none; max-height: none; width: 395.5px; height: 25px;">
+                                    <div style="text-align: center;"><b style="font-size: 18px;" class="">
+                                            <font size="2" style="max-width: none; max-height: none; width: 395.5px; height: 25px;">
+                                                <div style="text-align: left;"><b style="font-size: 24px; background-color: initial; text-align: left;">
+                                                        <font size="2" style="max-width: none; max-height: none; width: 395.5px; height: 25px;">
+                                                            <div style="text-align: center; display: inline !important;"><b style="font-size: 18px;" class="">
+                                                                </b></div>
+                                                        </font>
+                                                    </b></div>
+                                            </font>
+                                        </b></div>
+                                </font>
+                            </b></h2>
+                        <a href="https://dl.kibsell.com/" class="btn-get-started scrollto" style="max-width: none; max-height: none; width: 112.011px; height: 40.5398px;" download="ŞİMDİ İNDİR">İNDİR</a>
+                        <div class="text-center text-lg-left" style="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300" style="max-width: none; max-height: none; width: 419.5px; height: 167px;">
+                    <div style="max-width: none; max-height: none; width: 323.5px; height: 53px;">
+                        <h2 style="">
+                            <div style="text-align: left;"><b>
+                                    <div style="text-align: center;"><b style="background-color: initial;">
+                                            <div style="text-align: left;"><b style="text-align: left; background-color: initial;">
+                                                    <div style="text-align: center; display: inline !important;"><b style="background-color: initial;">MAĞAZADAYIZ</b></div>
+                                                </b></div>
+                                        </b></div>
+                                </b></div>
+                        </h2><br>
+                    </div>
+                    <a href="https://play.google.com/store/apps/details?id=com.kibsell.android" <div=""><img src="https://flyreklam.s3.eu-central-1.amazonaws.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/images/Yc96qyRK4JFTbqyn2oBB2RF4jfZdhQgvMtDpPW4V.png" class="img-fluid animated" alt="" style="font-size: 1rem; max-width: none; max-height: none; width: 235.5px; height: 69.471px;">
+                    </a>
+                    <div><a href="https://play.google.com/store/apps/details?id=com.kibsell.android" <div=""><br>
+                        </a>
+                        <div><a href="https://play.google.com/store/apps/details?id=com.kibsell.android" <div=""><span style="font-size: 1rem;">
+                                </span></a><a href="https://apps.apple.com/zw/app/kibsell-i-kinci-el-al%C4%B1m-sat%C4%B1m/id1550445147" <div=""><img src="https://flyreklam.s3.eu-central-1.amazonaws.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/images/in66AyS6x69bN40h20F4vlVQxpQIAbUqzujbqG0R.png" class="img-fluid animated" alt="" style="font-size: 1rem; max-width: none; max-height: none; width: 235.5px; height: 69.471px;"><br></a></div><a href="https://apps.apple.com/zw/app/kibsell-i-kinci-el-al%C4%B1m-sat%C4%B1m/id1550445147" <div="">
+                        </a>
+                    </div><a href="https://apps.apple.com/zw/app/kibsell-i-kinci-el-al%C4%B1m-sat%C4%B1m/id1550445147" <div="">
+                    </a>
+                </div><a href="https://apps.apple.com/zw/app/kibsell-i-kinci-el-al%C4%B1m-sat%C4%B1m/id1550445147" <div="">
+                </a>
+            </div><a href="https://apps.apple.com/zw/app/kibsell-i-kinci-el-al%C4%B1m-sat%C4%B1m/id1550445147" <div="">
+            </a>
+        </div><a href="https://apps.apple.com/zw/app/kibsell-i-kinci-el-al%C4%B1m-sat%C4%B1m/id1550445147" <div="">
+            <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+                <defs>
+                    <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+                    </path>
+                </defs>
+                <g class="wave1">
+                    <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+                    </use>
+                </g>
+                <g class="wave2">
+                    <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+                    </use>
+                </g>
+                <g class="wave3">
+                    <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+                    </use>
+                </g>
+            </svg>
+        </a>
+    </section><!-- End Hero --><a href="https://apps.apple.com/zw/app/kibsell-i-kinci-el-al%C4%B1m-sat%C4%B1m/id1550445147" <div="">
+    </a>
+    <main id="main"><a href="https://apps.apple.com/zw/app/kibsell-i-kinci-el-al%C4%B1m-sat%C4%B1m/id1550445147" <div="">
+            <!-- ======= About Section ======= -->
+        </a>
+        <section id="about" class="about" style="background-image: url(&quot;https://web.flyreklam.com/client/assets/images/textures/6.png&quot;); background-color: rgb(255, 255, 255);"><a href="https://apps.apple.com/zw/app/kibsell-i-kinci-el-al%C4%B1m-sat%C4%B1m/id1550445147" <div="">
+            </a>
+            <div class="container-fluid"><a href="https://apps.apple.com/zw/app/kibsell-i-kinci-el-al%C4%B1m-sat%C4%B1m/id1550445147" <div="">
+                </a>
+                <div class="row"><a href="https://apps.apple.com/zw/app/kibsell-i-kinci-el-al%C4%B1m-sat%C4%B1m/id1550445147" <div="">
+                    </a>
+                    <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right"><a href="https://apps.apple.com/zw/app/kibsell-i-kinci-el-al%C4%B1m-sat%C4%B1m/id1550445147" <div="">
+                        </a><a href="https://www.youtube.com/watch?v=mCGvV1jtwDQ" class="venobox play-btn mb-4 vbox-item" data-vbtype="video" data-autoplay="true"></a>
+                    </div>
+                    <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left" style="">
+                        <h3>İkinci El Sıfır Araba, Ev Telefon Al ve Sat</h3>
+                        <p><span style="color: rgb(51, 51, 51); font-family: Roboto, Arial, sans-serif; font-size: 14px;">Sahibinden satılık araba ve kiralık daireden ikinci el mobilya ve giyime kadar hepsi burada</span><br style="-webkit-tap-highlight-color: transparent; color: rgb(51, 51, 51); font-family: Roboto, Arial, sans-serif; font-size: 14px;"><span style="color: rgb(51, 51, 51); font-family: Roboto, Arial, sans-serif; font-size: 14px;">Kibsell ile kullanmadığın eşyalarını satarak kolayca para kazanabilir veya milyonlarca ürünü çok uygun fiyatlara alabilirsin.</span></p>
+                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="icon"><i class="bx bx-fingerprint"></i></div>
+                            <h4 class="title"><a href="">HIZLI PRATİK</a></h4>
+                            <p class="description">Hemen İlan Paylaş butonu basarak kibsell pazar yerine yerinizi alabilirsiniz.</p>
+                        </div>
+                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="icon"><i class="bx bx-gift"></i></div>
+                            <h4 class="title"><a href="">KULLANIMI ÇOK KOLAY</a></h4>
+                            <p class="description"><span style="color: rgb(51, 51, 51); font-family: Roboto, Arial, sans-serif;">Kibsell sana bulunduğun konumdaki en popüler ürünleri gösterir. İster etrafındaki ürünleri keşfedebilir, <br>ister almayı planladığın ürünü arayarak sonuçlara ulaşabilirsin.</span></p>
+                        </div>
+                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="icon"><i class="bx bx-atom"></i></div>
+                            <h4 class="title"><a href="">ZAMAN KAYBETMEYİN</a></h4>
+                            <p class="description">Alışveriş sitelerinde indirimleri kovalamak yerine alışverişi ucuza getirmenin yolu</p>
+                            <div></div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <script src="https://apps.elfsight.com/p/platform.js" defer=""></script>
+<div class="elfsight-app-c562afe9-e0da-4693-aed4-23209019cd36"><div id="eapps-social-feed-c562afe9-e0da-4693-aed4-23209019cd36" class="RootLayout__Component-sc-1doisyz-0 khYdts eapps-social-feed-c562afe9-e0da-4693-aed4-23209019cd36-custom-css-hook" data-app="eapps-social-feed" data-app-version="1.0.0"><div class="WidgetBackground__Container-e8l9qy-0 lnYNZA" style="border-radius: 0px; height: auto;"><div class="WidgetBackground__Background-e8l9qy-1 jOGBpY" style="background-color: rgb(255, 255, 255);"></div><div class="WidgetBackground__Overlay-e8l9qy-2 MZptT" style="background-color: rgba(255, 255, 255, 0);"></div><div class="WidgetBackground__ContentContainer-e8l9qy-3 itPoGS"><div class="WidgetBackground__Content-e8l9qy-4 bRanta" style="padding: 20px 40px;"><div class="Main__Inner-sc-1241y56-0 gUoGbZ"><div class="LayoutContainer__Container-sc-16u86q7-0 hMfXNc"><div class="Grid__Container-x730z7-0 bLZjOn" style="padding-left: 0px;"><div style="width: 222px; margin-top: 0px; margin-right: 20px;"><div class="CardLayout__Container-sc-1degoda-5 CardContainer-pr3shd-0 edjYcl locAEQ"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__OuterBlock-sc-1degoda-2 CardMediaBlock__MediaBlock-sc-1ftcd60-0 hOgXZX"><div class="MediaContainer__Container-srykg7-0 jftFWy MediaContainer-srykg7-3 ctmgBK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA MediaContainer__BackgroundImage-srykg7-1 bzVeRp"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/p720x720/190990170_207436774551448_453821375988712677_n.jpg?_nc_cat=107&amp;ccb=1-3&amp;_nc_sid=2d5d41&amp;_nc_ohc=u4m7dH6Kv2sAX_wPe-Z&amp;_nc_ht=scontent-lax3-2.xx&amp;tp=6&amp;oh=ccec8c4b62f778a5d5805671d1f90623&amp;oe=60DAA01B"></div><div class="MediaContainer__Inner-srykg7-2 ijqlRZ"><div class="Image__Container-sc-1r24wr0-0 gqVmoA"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/p720x720/190990170_207436774551448_453821375988712677_n.jpg?_nc_cat=107&amp;ccb=1-3&amp;_nc_sid=2d5d41&amp;_nc_ohc=u4m7dH6Kv2sAX_wPe-Z&amp;_nc_ht=scontent-lax3-2.xx&amp;tp=6&amp;oh=ccec8c4b62f778a5d5805671d1f90623&amp;oe=60DAA01B" style="max-width: 720px; max-height: 720px;"></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__BackdropLayer-n9sk5o-1 bdCwtY djlNwT"></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__OffsetLayer-n9sk5o-0 bdCwtY iCdznx"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 khtPHw"><div class="Text__Container-sc-6taaia-0 kEGWFB"><div class="Shortener__Outer-sc-9m71z4-0 hSnRMw"><div class="Shortener__Inner-sc-9m71z4-1 foMZZN"><div>Siz zahmet etmeyin onlar sizi bulsun, <br>Market: <a href="https://dl.kibsell.com" target="_blank" rel="noreferrer noopener nofollow">https://dl.kibsell.com</a> <a href="https://www.facebook.com/hashtag/alimsatim" target="_blank" rel="noreferrer noopener nofollow">#alimsatim</a> <a href="https://www.facebook.com/hashtag/kibsell" target="_blank" rel="noreferrer noopener nofollow">#kibsell</a></div></div></div></div></div><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 hcZZrx CardUserBlock__UserBlock-q7evie-0 hozOeE"><div class="User__Container-sc-1b0vs6-6 fCxvDa CardUserBlock__StyledUser-q7evie-1"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__AvatarLink-sc-1b0vs6-5 hDOyXK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA User__Avatar-sc-1b0vs6-0 CLpGi"><img src="https://graph.facebook.com/102396615055465/picture?type=square" style="max-width: 100px; max-height: 100px;"></div></a><div class="User__Info-sc-1b0vs6-1 kBOvJK" style="max-width: calc(100% - 40px);"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__NameLink-sc-1b0vs6-3 kYBIct"><div class="User__NameAndBadge-sc-1b0vs6-4 kSeuFM"><div class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Name-sc-1b0vs6-2 jjsSVo">Kibsell</div></div></a><div title="5/24/2021, 2:36:05 PM" class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Caption-i0v8gh-1 imoPDr"><span><time datetime="May 24, 2021, 2:36 PM GMT+3" title="May 24, 2021, 2:36 PM GMT+3" class="DateTime__Time-sc-13gi7wj-0 byORgK">May 24</time></span></div></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 fMptQs"></div></div></div><div style="width: 222px; margin-top: 0px; margin-right: 20px;"><div class="CardLayout__Container-sc-1degoda-5 CardContainer-pr3shd-0 edjYcl locAEQ"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__OuterBlock-sc-1degoda-2 CardMediaBlock__MediaBlock-sc-1ftcd60-0 hOgXZX"><div class="MediaContainer__Container-srykg7-0 jftFWy MediaContainer-srykg7-3 ctmgBK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA MediaContainer__BackgroundImage-srykg7-1 bzVeRp"><img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.6435-9/p720x720/189146672_206581481303644_2388625798575537100_n.jpg?_nc_cat=104&amp;ccb=1-3&amp;_nc_sid=2d5d41&amp;_nc_ohc=Fj0QJVcj-fcAX8EvBg4&amp;_nc_ht=scontent-lax3-1.xx&amp;tp=6&amp;oh=c3d2f2e2693280b645d18ecf5e7ad72a&amp;oe=60D9467C"></div><div class="MediaContainer__Inner-srykg7-2 ijqlRZ"><div class="Image__Container-sc-1r24wr0-0 gqVmoA"><img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.6435-9/p720x720/189146672_206581481303644_2388625798575537100_n.jpg?_nc_cat=104&amp;ccb=1-3&amp;_nc_sid=2d5d41&amp;_nc_ohc=Fj0QJVcj-fcAX8EvBg4&amp;_nc_ht=scontent-lax3-1.xx&amp;tp=6&amp;oh=c3d2f2e2693280b645d18ecf5e7ad72a&amp;oe=60D9467C" style="max-width: 720px; max-height: 720px;"></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__BackdropLayer-n9sk5o-1 bdCwtY djlNwT"></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__OffsetLayer-n9sk5o-0 bdCwtY iCdznx"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 khtPHw"><div class="Text__Container-sc-6taaia-0 kEGWFB"><div class="Shortener__Outer-sc-9m71z4-0 hSnRMw"><div class="Shortener__Inner-sc-9m71z4-1 foMZZN"><div>Şehrinizin gerçek satıcıları kibsell' de<br>Market: <a href="https://dl.kibsell.com" target="_blank" rel="noreferrer noopener nofollow">https://dl.kibsell.com</a> <a href="https://www.facebook.com/hashtag/alimsatim" target="_blank" rel="noreferrer noopener nofollow">#alimsatim</a> <a href="https://www.facebook.com/hashtag/kibsell" target="_blank" rel="noreferrer noopener nofollow">#kibsell</a></div></div></div></div></div><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 hcZZrx CardUserBlock__UserBlock-q7evie-0 hozOeE"><div class="User__Container-sc-1b0vs6-6 fCxvDa CardUserBlock__StyledUser-q7evie-1"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__AvatarLink-sc-1b0vs6-5 hDOyXK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA User__Avatar-sc-1b0vs6-0 CLpGi"><img src="https://graph.facebook.com/102396615055465/picture?type=square" style="max-width: 100px; max-height: 100px;"></div></a><div class="User__Info-sc-1b0vs6-1 kBOvJK" style="max-width: calc(100% - 40px);"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__NameLink-sc-1b0vs6-3 kYBIct"><div class="User__NameAndBadge-sc-1b0vs6-4 kSeuFM"><div class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Name-sc-1b0vs6-2 jjsSVo">Kibsell</div></div></a><div title="5/23/2021, 4:06:59 AM" class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Caption-i0v8gh-1 imoPDr"><span><time datetime="May 23, 2021, 4:06 AM GMT+3" title="May 23, 2021, 4:06 AM GMT+3" class="DateTime__Time-sc-13gi7wj-0 byORgK">May 23</time></span></div></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 fMptQs"></div></div></div><div style="width: 222px; margin-top: 0px; margin-right: 20px;"><div class="CardLayout__Container-sc-1degoda-5 CardContainer-pr3shd-0 edjYcl locAEQ"><div class="CardLayout__Layer-sc-1degoda-3 Card2__BackdropLayer-n9sk5o-1 bdCwtY djlNwT"></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__OffsetLayer-n9sk5o-0 bdCwtY iCdznx"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 khtPHw"><div class="Text__Container-sc-6taaia-0 kEGWFB"><div class="Shortener__Outer-sc-9m71z4-0 hSnRMw"><div class="Shortener__Inner-sc-9m71z4-1 foMZZN"><div>Uygun ikinci el araçlar kibsell' de<br>Market: <a href="https://dl.kibsell.com" target="_blank" rel="noreferrer noopener nofollow">https://dl.kibsell.com</a> <a href="https://www.facebook.com/hashtag/alimsatim" target="_blank" rel="noreferrer noopener nofollow">#alimsatim</a> <a href="https://www.facebook.com/hashtag/kibsell" target="_blank" rel="noreferrer noopener nofollow">#kibsell</a></div></div></div></div></div><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 hcZZrx CardUserBlock__UserBlock-q7evie-0 hozOeE"><div class="User__Container-sc-1b0vs6-6 fCxvDa CardUserBlock__StyledUser-q7evie-1"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__AvatarLink-sc-1b0vs6-5 hDOyXK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA User__Avatar-sc-1b0vs6-0 CLpGi"><img src="https://graph.facebook.com/102396615055465/picture?type=square" style="max-width: 100px; max-height: 100px;"></div></a><div class="User__Info-sc-1b0vs6-1 kBOvJK" style="max-width: calc(100% - 40px);"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__NameLink-sc-1b0vs6-3 kYBIct"><div class="User__NameAndBadge-sc-1b0vs6-4 kSeuFM"><div class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Name-sc-1b0vs6-2 jjsSVo">Kibsell</div></div></a><div title="5/6/2021, 10:25:44 PM" class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Caption-i0v8gh-1 imoPDr"><span><time datetime="May 6, 2021, 10:25 PM GMT+3" title="May 6, 2021, 10:25 PM GMT+3" class="DateTime__Time-sc-13gi7wj-0 byORgK">May 6</time></span></div></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 fMptQs"><div class="Icon__IconContainer-sc-1ysxs3-0 ibWNoY ShadowIcon-sc-1f9d1tv-0 fpHccz" style="width: 16px; height: 16px; fill: rgb(255, 255, 255);"><div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M19.643 12.848L6.53 21.044A1 1 0 015 20.196V3.804a1 1 0 011.53-.848l13.113 8.196a1 1 0 010 1.696z"></path></svg></div></div></div></div></div><div style="width: 222px; margin-top: 0px; margin-right: 20px;"><div class="CardLayout__Container-sc-1degoda-5 CardContainer-pr3shd-0 edjYcl locAEQ"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__OuterBlock-sc-1degoda-2 CardMediaBlock__MediaBlock-sc-1ftcd60-0 hOgXZX"><div class="MediaContainer__Container-srykg7-0 jftFWy MediaContainer-srykg7-3 ctmgBK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA MediaContainer__BackgroundImage-srykg7-1 bzVeRp"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/p720x720/182579157_196992768929182_4400335993219895246_n.jpg?_nc_cat=107&amp;ccb=1-3&amp;_nc_sid=2d5d41&amp;_nc_ohc=GEXEYeCcNj8AX_7UhiU&amp;_nc_ht=scontent-lax3-2.xx&amp;tp=6&amp;oh=593335f3c419dd63c85d24d306dae3ad&amp;oe=60D70EFA"></div><div class="MediaContainer__Inner-srykg7-2 ijqlRZ"><div class="Image__Container-sc-1r24wr0-0 gqVmoA"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/p720x720/182579157_196992768929182_4400335993219895246_n.jpg?_nc_cat=107&amp;ccb=1-3&amp;_nc_sid=2d5d41&amp;_nc_ohc=GEXEYeCcNj8AX_7UhiU&amp;_nc_ht=scontent-lax3-2.xx&amp;tp=6&amp;oh=593335f3c419dd63c85d24d306dae3ad&amp;oe=60D70EFA" style="max-width: 720px; max-height: 720px;"></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__BackdropLayer-n9sk5o-1 bdCwtY djlNwT"></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__OffsetLayer-n9sk5o-0 bdCwtY iCdznx"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 khtPHw"><div class="Text__Container-sc-6taaia-0 kEGWFB"><div class="Shortener__Outer-sc-9m71z4-0 hSnRMw"><div class="Shortener__Inner-sc-9m71z4-1 foMZZN"><div>Şimdi İkinci el dünyasına giriş yapın,<br>Market: <a href="https://dl.kibsell.com" target="_blank" rel="noreferrer noopener nofollow">https://dl.kibsell.com</a> <a href="https://www.facebook.com/hashtag/alimsatim" target="_blank" rel="noreferrer noopener nofollow">#alimsatim</a> <a href="https://www.facebook.com/hashtag/kibsell" target="_blank" rel="noreferrer noopener nofollow">#kibsell</a></div></div></div></div></div><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 hcZZrx CardUserBlock__UserBlock-q7evie-0 hozOeE"><div class="User__Container-sc-1b0vs6-6 fCxvDa CardUserBlock__StyledUser-q7evie-1"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__AvatarLink-sc-1b0vs6-5 hDOyXK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA User__Avatar-sc-1b0vs6-0 CLpGi"><img src="https://graph.facebook.com/102396615055465/picture?type=square" style="max-width: 100px; max-height: 100px;"></div></a><div class="User__Info-sc-1b0vs6-1 kBOvJK" style="max-width: calc(100% - 40px);"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__NameLink-sc-1b0vs6-3 kYBIct"><div class="User__NameAndBadge-sc-1b0vs6-4 kSeuFM"><div class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Name-sc-1b0vs6-2 jjsSVo">Kibsell</div></div></a><div title="5/6/2021, 10:09:16 PM" class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Caption-i0v8gh-1 imoPDr"><span><time datetime="May 6, 2021, 10:09 PM GMT+3" title="May 6, 2021, 10:09 PM GMT+3" class="DateTime__Time-sc-13gi7wj-0 byORgK">May 6</time></span></div></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 fMptQs"></div></div></div><div style="width: 222px; margin-top: 0px; margin-right: 0px;"><div class="CardLayout__Container-sc-1degoda-5 CardContainer-pr3shd-0 edjYcl locAEQ"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__OuterBlock-sc-1degoda-2 CardMediaBlock__MediaBlock-sc-1ftcd60-0 hOgXZX"><div class="MediaContainer__Container-srykg7-0 jftFWy MediaContainer-srykg7-3 ctmgBK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA MediaContainer__BackgroundImage-srykg7-1 bzVeRp"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/p720x720/177645196_188999123061880_2512644766329799937_n.jpg?_nc_cat=101&amp;ccb=1-3&amp;_nc_sid=2d5d41&amp;_nc_ohc=-ZIvD3qCCyAAX9YV6YT&amp;_nc_ht=scontent-lax3-2.xx&amp;tp=6&amp;oh=4b7f7418e590e5184d96bcfb54153db8&amp;oe=60DA38FF"></div><div class="MediaContainer__Inner-srykg7-2 ijqlRZ"><div class="Image__Container-sc-1r24wr0-0 gqVmoA"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/p720x720/177645196_188999123061880_2512644766329799937_n.jpg?_nc_cat=101&amp;ccb=1-3&amp;_nc_sid=2d5d41&amp;_nc_ohc=-ZIvD3qCCyAAX9YV6YT&amp;_nc_ht=scontent-lax3-2.xx&amp;tp=6&amp;oh=4b7f7418e590e5184d96bcfb54153db8&amp;oe=60DA38FF" style="max-width: 720px; max-height: 720px;"></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__BackdropLayer-n9sk5o-1 bdCwtY djlNwT"></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__OffsetLayer-n9sk5o-0 bdCwtY iCdznx"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 khtPHw"><div class="Text__Container-sc-6taaia-0 kEGWFB"><div class="Shortener__Outer-sc-9m71z4-0 gsRLWG"><div class="Shortener__Inner-sc-9m71z4-1 foMZZN"><div>23 Nisan Ulusal Egemenlik ve Çocuk Bayramı kutlu olsun.</div></div></div></div></div><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 hcZZrx CardUserBlock__UserBlock-q7evie-0 hozOeE"><div class="User__Container-sc-1b0vs6-6 fCxvDa CardUserBlock__StyledUser-q7evie-1"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__AvatarLink-sc-1b0vs6-5 hDOyXK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA User__Avatar-sc-1b0vs6-0 CLpGi"><img src="https://graph.facebook.com/102396615055465/picture?type=square" style="max-width: 100px; max-height: 100px;"></div></a><div class="User__Info-sc-1b0vs6-1 kBOvJK" style="max-width: calc(100% - 40px);"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__NameLink-sc-1b0vs6-3 kYBIct"><div class="User__NameAndBadge-sc-1b0vs6-4 kSeuFM"><div class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Name-sc-1b0vs6-2 jjsSVo">Kibsell</div></div></a><div title="4/23/2021, 11:27:08 AM" class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Caption-i0v8gh-1 imoPDr"><span><time datetime="April 23, 2021, 11:27 AM GMT+3" title="April 23, 2021, 11:27 AM GMT+3" class="DateTime__Time-sc-13gi7wj-0 byORgK">April 23</time></span></div></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 fMptQs"></div></div></div><div style="width: 222px; margin-top: 20px; margin-right: 20px;"><div class="CardLayout__Container-sc-1degoda-5 CardContainer-pr3shd-0 edjYcl locAEQ"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__OuterBlock-sc-1degoda-2 CardMediaBlock__MediaBlock-sc-1ftcd60-0 hOgXZX"><div class="MediaContainer__Container-srykg7-0 jftFWy MediaContainer-srykg7-3 ctmgBK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA MediaContainer__BackgroundImage-srykg7-1 bzVeRp"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/p720x720/174489352_185885766706549_5974195402635939103_n.jpg?_nc_cat=107&amp;ccb=1-3&amp;_nc_sid=2d5d41&amp;_nc_ohc=T2FiycvjW1cAX9_8fdt&amp;_nc_ht=scontent-lax3-2.xx&amp;tp=6&amp;oh=e61cf23da8ff2cf2a458b424cc35ae6f&amp;oe=60DA802D"></div><div class="MediaContainer__Inner-srykg7-2 ijqlRZ"><div class="Image__Container-sc-1r24wr0-0 gqVmoA"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/p720x720/174489352_185885766706549_5974195402635939103_n.jpg?_nc_cat=107&amp;ccb=1-3&amp;_nc_sid=2d5d41&amp;_nc_ohc=T2FiycvjW1cAX9_8fdt&amp;_nc_ht=scontent-lax3-2.xx&amp;tp=6&amp;oh=e61cf23da8ff2cf2a458b424cc35ae6f&amp;oe=60DA802D" style="max-width: 720px; max-height: 720px;"></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__BackdropLayer-n9sk5o-1 bdCwtY djlNwT"></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__OffsetLayer-n9sk5o-0 bdCwtY iCdznx"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 khtPHw"><div class="Text__Container-sc-6taaia-0 kEGWFB"><div class="Shortener__Outer-sc-9m71z4-0 hSnRMw"><div class="Shortener__Inner-sc-9m71z4-1 foMZZN"><div>İkinci el favori ürünlerinize ulaşın,<br>Market: <a href="https://dl.kibsell.com" target="_blank" rel="noreferrer noopener nofollow">https://dl.kibsell.com</a> <a href="https://www.facebook.com/hashtag/alimsatim" target="_blank" rel="noreferrer noopener nofollow">#alimsatim</a> <a href="https://www.facebook.com/hashtag/kibsell" target="_blank" rel="noreferrer noopener nofollow">#kibsell</a></div></div></div></div></div><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 hcZZrx CardUserBlock__UserBlock-q7evie-0 hozOeE"><div class="User__Container-sc-1b0vs6-6 fCxvDa CardUserBlock__StyledUser-q7evie-1"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__AvatarLink-sc-1b0vs6-5 hDOyXK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA User__Avatar-sc-1b0vs6-0 CLpGi"><img src="https://graph.facebook.com/102396615055465/picture?type=square" style="max-width: 100px; max-height: 100px;"></div></a><div class="User__Info-sc-1b0vs6-1 kBOvJK" style="max-width: calc(100% - 40px);"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__NameLink-sc-1b0vs6-3 kYBIct"><div class="User__NameAndBadge-sc-1b0vs6-4 kSeuFM"><div class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Name-sc-1b0vs6-2 jjsSVo">Kibsell</div></div></a><div title="4/18/2021, 7:14:25 AM" class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Caption-i0v8gh-1 imoPDr"><span><time datetime="April 18, 2021, 7:14 AM GMT+3" title="April 18, 2021, 7:14 AM GMT+3" class="DateTime__Time-sc-13gi7wj-0 byORgK">April 18</time></span></div></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 fMptQs"></div></div></div><div style="width: 222px; margin-top: 20px; margin-right: 20px;"><div class="CardLayout__Container-sc-1degoda-5 CardContainer-pr3shd-0 edjYcl locAEQ"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__OuterBlock-sc-1degoda-2 CardMediaBlock__MediaBlock-sc-1ftcd60-0 hOgXZX"><div class="MediaContainer__Container-srykg7-0 jftFWy MediaContainer-srykg7-3 ctmgBK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA MediaContainer__BackgroundImage-srykg7-1 bzVeRp"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/p720x720/173917216_184711826823943_3804171752213054070_n.jpg?_nc_cat=103&amp;ccb=1-3&amp;_nc_sid=2d5d41&amp;_nc_ohc=2oL9GWuaSqUAX-N772L&amp;_nc_ht=scontent-lax3-2.xx&amp;tp=6&amp;oh=8224fe4058b8498642bf0630e556bd81&amp;oe=60D7C58D"></div><div class="MediaContainer__Inner-srykg7-2 ijqlRZ"><div class="Image__Container-sc-1r24wr0-0 gqVmoA"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/p720x720/173917216_184711826823943_3804171752213054070_n.jpg?_nc_cat=103&amp;ccb=1-3&amp;_nc_sid=2d5d41&amp;_nc_ohc=2oL9GWuaSqUAX-N772L&amp;_nc_ht=scontent-lax3-2.xx&amp;tp=6&amp;oh=8224fe4058b8498642bf0630e556bd81&amp;oe=60D7C58D" style="max-width: 720px; max-height: 720px;"></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__BackdropLayer-n9sk5o-1 bdCwtY djlNwT"></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__OffsetLayer-n9sk5o-0 bdCwtY iCdznx"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 khtPHw"><div class="Text__Container-sc-6taaia-0 kEGWFB"><div class="Shortener__Outer-sc-9m71z4-0 hSnRMw"><div class="Shortener__Inner-sc-9m71z4-1 foMZZN"><div>Kibsell; Covid-19'suz günler çok yakın!<br>Market: <a href="https://dl.kibsell.com" target="_blank" rel="noreferrer noopener nofollow">https://dl.kibsell.com</a> <a href="https://www.facebook.com/hashtag/alimsatim" target="_blank" rel="noreferrer noopener nofollow">#alimsatim</a> <a href="https://www.facebook.com/hashtag/kibsell" target="_blank" rel="noreferrer noopener nofollow">#kibsell</a></div></div></div></div></div><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 hcZZrx CardUserBlock__UserBlock-q7evie-0 hozOeE"><div class="User__Container-sc-1b0vs6-6 fCxvDa CardUserBlock__StyledUser-q7evie-1"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__AvatarLink-sc-1b0vs6-5 hDOyXK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA User__Avatar-sc-1b0vs6-0 CLpGi"><img src="https://graph.facebook.com/102396615055465/picture?type=square" style="max-width: 100px; max-height: 100px;"></div></a><div class="User__Info-sc-1b0vs6-1 kBOvJK" style="max-width: calc(100% - 40px);"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__NameLink-sc-1b0vs6-3 kYBIct"><div class="User__NameAndBadge-sc-1b0vs6-4 kSeuFM"><div class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Name-sc-1b0vs6-2 jjsSVo">Kibsell</div></div></a><div title="4/16/2021, 7:12:06 AM" class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Caption-i0v8gh-1 imoPDr"><span><time datetime="April 16, 2021, 7:12 AM GMT+3" title="April 16, 2021, 7:12 AM GMT+3" class="DateTime__Time-sc-13gi7wj-0 byORgK">April 16</time></span></div></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 fMptQs"></div></div></div><div style="width: 222px; margin-top: 20px; margin-right: 20px;"><div class="CardLayout__Container-sc-1degoda-5 CardContainer-pr3shd-0 edjYcl locAEQ"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__OuterBlock-sc-1degoda-2 CardMediaBlock__MediaBlock-sc-1ftcd60-0 hOgXZX"><div class="MediaContainer__Container-srykg7-0 jftFWy MediaContainer-srykg7-3 ctmgBK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA MediaContainer__BackgroundImage-srykg7-1 bzVeRp"><img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.6435-9/p720x720/173449626_184119683549824_1867193774692587359_n.jpg?_nc_cat=105&amp;ccb=1-3&amp;_nc_sid=2d5d41&amp;_nc_ohc=V-IEv-elED4AX-0cnLl&amp;_nc_ht=scontent-lax3-1.xx&amp;tp=6&amp;oh=5e08cdab9fd4cf35c048f64e610b823b&amp;oe=60D70E54"></div><div class="MediaContainer__Inner-srykg7-2 ijqlRZ"><div class="Image__Container-sc-1r24wr0-0 gqVmoA"><img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.6435-9/p720x720/173449626_184119683549824_1867193774692587359_n.jpg?_nc_cat=105&amp;ccb=1-3&amp;_nc_sid=2d5d41&amp;_nc_ohc=V-IEv-elED4AX-0cnLl&amp;_nc_ht=scontent-lax3-1.xx&amp;tp=6&amp;oh=5e08cdab9fd4cf35c048f64e610b823b&amp;oe=60D70E54" style="max-width: 720px; max-height: 720px;"></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__BackdropLayer-n9sk5o-1 bdCwtY djlNwT"></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__OffsetLayer-n9sk5o-0 bdCwtY iCdznx"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 khtPHw"><div class="Text__Container-sc-6taaia-0 kEGWFB"><div class="Shortener__Outer-sc-9m71z4-0 hSnRMw"><div class="Shortener__Inner-sc-9m71z4-1 foMZZN"><div>İkinci el dünyası şimdi marketlerde <br>Market: <a href="https://dl.kibsell.com" target="_blank" rel="noreferrer noopener nofollow">https://dl.kibsell.com</a> <a href="https://www.facebook.com/hashtag/alimsatim" target="_blank" rel="noreferrer noopener nofollow">#alimsatim</a> <a href="https://www.facebook.com/hashtag/kibsell" target="_blank" rel="noreferrer noopener nofollow">#kibsell</a></div></div></div></div></div><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 hcZZrx CardUserBlock__UserBlock-q7evie-0 hozOeE"><div class="User__Container-sc-1b0vs6-6 fCxvDa CardUserBlock__StyledUser-q7evie-1"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__AvatarLink-sc-1b0vs6-5 hDOyXK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA User__Avatar-sc-1b0vs6-0 CLpGi"><img src="https://graph.facebook.com/102396615055465/picture?type=square" style="max-width: 100px; max-height: 100px;"></div></a><div class="User__Info-sc-1b0vs6-1 kBOvJK" style="max-width: calc(100% - 40px);"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__NameLink-sc-1b0vs6-3 kYBIct"><div class="User__NameAndBadge-sc-1b0vs6-4 kSeuFM"><div class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Name-sc-1b0vs6-2 jjsSVo">Kibsell</div></div></a><div title="4/15/2021, 7:07:25 AM" class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Caption-i0v8gh-1 imoPDr"><span><time datetime="April 15, 2021, 7:07 AM GMT+3" title="April 15, 2021, 7:07 AM GMT+3" class="DateTime__Time-sc-13gi7wj-0 byORgK">April 15</time></span></div></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 fMptQs"></div></div></div><div style="width: 222px; margin-top: 20px; margin-right: 20px;"><div class="CardLayout__Container-sc-1degoda-5 CardContainer-pr3shd-0 edjYcl locAEQ"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__OuterBlock-sc-1degoda-2 CardMediaBlock__MediaBlock-sc-1ftcd60-0 hOgXZX"><div class="MediaContainer__Container-srykg7-0 jftFWy MediaContainer-srykg7-3 ctmgBK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA MediaContainer__BackgroundImage-srykg7-1 bzVeRp"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/p720x720/173461879_183548106940315_1840777523525868385_n.jpg?_nc_cat=100&amp;ccb=1-3&amp;_nc_sid=2d5d41&amp;_nc_ohc=1HUCK5D7x8oAX-2a4rK&amp;_nc_ht=scontent-lax3-2.xx&amp;tp=6&amp;oh=d04aaf7b675b8f2c69727881ccdd6505&amp;oe=60D9D50A"></div><div class="MediaContainer__Inner-srykg7-2 ijqlRZ"><div class="Image__Container-sc-1r24wr0-0 gqVmoA"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/p720x720/173461879_183548106940315_1840777523525868385_n.jpg?_nc_cat=100&amp;ccb=1-3&amp;_nc_sid=2d5d41&amp;_nc_ohc=1HUCK5D7x8oAX-2a4rK&amp;_nc_ht=scontent-lax3-2.xx&amp;tp=6&amp;oh=d04aaf7b675b8f2c69727881ccdd6505&amp;oe=60D9D50A" style="max-width: 720px; max-height: 720px;"></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__BackdropLayer-n9sk5o-1 bdCwtY djlNwT"></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__OffsetLayer-n9sk5o-0 bdCwtY iCdznx"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 khtPHw"><div class="Text__Container-sc-6taaia-0 kEGWFB"><div class="Shortener__Outer-sc-9m71z4-0 hSnRMw"><div class="Shortener__Inner-sc-9m71z4-1 foMZZN"><div>İkinci el sıfır telefonlara gözatın <br>Market: <a href="https://dl.kibsell.com" target="_blank" rel="noreferrer noopener nofollow">https://dl.kibsell.com</a> <a href="https://www.facebook.com/hashtag/alimsatim" target="_blank" rel="noreferrer noopener nofollow">#alimsatim</a> <a href="https://www.facebook.com/hashtag/kibsell" target="_blank" rel="noreferrer noopener nofollow">#kibsell</a></div></div></div></div></div><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 hcZZrx CardUserBlock__UserBlock-q7evie-0 hozOeE"><div class="User__Container-sc-1b0vs6-6 fCxvDa CardUserBlock__StyledUser-q7evie-1"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__AvatarLink-sc-1b0vs6-5 hDOyXK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA User__Avatar-sc-1b0vs6-0 CLpGi"><img src="https://graph.facebook.com/102396615055465/picture?type=square" style="max-width: 100px; max-height: 100px;"></div></a><div class="User__Info-sc-1b0vs6-1 kBOvJK" style="max-width: calc(100% - 40px);"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__NameLink-sc-1b0vs6-3 kYBIct"><div class="User__NameAndBadge-sc-1b0vs6-4 kSeuFM"><div class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Name-sc-1b0vs6-2 jjsSVo">Kibsell</div></div></a><div title="4/14/2021, 8:22:51 AM" class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Caption-i0v8gh-1 imoPDr"><span><time datetime="April 14, 2021, 8:22 AM GMT+3" title="April 14, 2021, 8:22 AM GMT+3" class="DateTime__Time-sc-13gi7wj-0 byORgK">April 14</time></span></div></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 fMptQs"></div></div></div><div style="width: 222px; margin-top: 20px; margin-right: 0px;"><div class="CardLayout__Container-sc-1degoda-5 CardContainer-pr3shd-0 edjYcl locAEQ"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__OuterBlock-sc-1degoda-2 CardMediaBlock__MediaBlock-sc-1ftcd60-0 hOgXZX"><div class="MediaContainer__Container-srykg7-0 jftFWy MediaContainer-srykg7-3 ctmgBK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA MediaContainer__BackgroundImage-srykg7-1 bzVeRp"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/p720x720/172735121_182889950339464_7500219411335088112_n.jpg?_nc_cat=101&amp;ccb=1-3&amp;_nc_sid=2d5d41&amp;_nc_ohc=HaiDOJhT2AQAX8HnPxd&amp;_nc_ht=scontent-lax3-2.xx&amp;tp=6&amp;oh=4be0056e28fa7af81e936f903dd5eac9&amp;oe=60DA2147"></div><div class="MediaContainer__Inner-srykg7-2 ijqlRZ"><div class="Image__Container-sc-1r24wr0-0 gqVmoA"><img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/p720x720/172735121_182889950339464_7500219411335088112_n.jpg?_nc_cat=101&amp;ccb=1-3&amp;_nc_sid=2d5d41&amp;_nc_ohc=HaiDOJhT2AQAX8HnPxd&amp;_nc_ht=scontent-lax3-2.xx&amp;tp=6&amp;oh=4be0056e28fa7af81e936f903dd5eac9&amp;oe=60DA2147" style="max-width: 720px; max-height: 720px;"></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__BackdropLayer-n9sk5o-1 bdCwtY djlNwT"></div><div class="CardLayout__Layer-sc-1degoda-3 Card2__OffsetLayer-n9sk5o-0 bdCwtY iCdznx"><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 khtPHw"><div class="Text__Container-sc-6taaia-0 kEGWFB"><div class="Shortener__Outer-sc-9m71z4-0 hSnRMw"><div class="Shortener__Inner-sc-9m71z4-1 foMZZN"><div>Giyim ürünlerinizi değerlendiren uygulama <br>Market: <a href="https://dl.kibsell.com" target="_blank" rel="noreferrer noopener nofollow">https://dl.kibsell.com</a> <a href="https://www.facebook.com/hashtag/alimsatim" target="_blank" rel="noreferrer noopener nofollow">#alimsatim</a> <a href="https://www.facebook.com/hashtag/kibsell" target="_blank" rel="noreferrer noopener nofollow">#kibsell</a></div></div></div></div></div><div class="CardLayout__Block-sc-1degoda-0 CardLayout__RegularBlock-sc-1degoda-1 hcZZrx CardUserBlock__UserBlock-q7evie-0 hozOeE"><div class="User__Container-sc-1b0vs6-6 fCxvDa CardUserBlock__StyledUser-q7evie-1"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__AvatarLink-sc-1b0vs6-5 hDOyXK"><div class="Image__Container-sc-1r24wr0-0 gqVmoA User__Avatar-sc-1b0vs6-0 CLpGi"><img src="https://graph.facebook.com/102396615055465/picture?type=square" style="max-width: 100px; max-height: 100px;"></div></a><div class="User__Info-sc-1b0vs6-1 kBOvJK" style="max-width: calc(100% - 40px);"><a href="https://facebook.com/102396615055465" target="_blank" rel="noopener noreferrer nofollow" class="Link__A-eibbff-0 bYTDVa User__NameLink-sc-1b0vs6-3 kYBIct"><div class="User__NameAndBadge-sc-1b0vs6-4 kSeuFM"><div class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Name-sc-1b0vs6-2 jjsSVo">Kibsell</div></div></a><div title="4/13/2021, 7:17:13 AM" class="Ellipsis__Wrapper-sc-7im3um-0 jVgxPC User__Caption-i0v8gh-1 imoPDr"><span><time datetime="April 13, 2021, 7:17 AM GMT+3" title="April 13, 2021, 7:17 AM GMT+3" class="DateTime__Time-sc-13gi7wj-0 byORgK">April 13</time></span></div></div></div></div></div><div class="CardLayout__Layer-sc-1degoda-3 fMptQs"></div></div></div></div></div><div class="LoadMoreButton__Container-sc-1rd4h4j-0 byymCY"><button tabindex="0" class="ButtonBase__ButtonContainer-sc-6hgm97-3 igFLjj" style="border-radius: 4px; border-color: rgba(0, 0, 0, 0); color: rgba(17, 17, 17, 0.5); font-family: inherit; background-color: rgb(231, 231, 231);"><span class="ButtonBase__Overlay-sc-6hgm97-4 bdDGJD" style="padding: 7px 67px; background-color: rgba(0, 0, 0, 0);"><span class="ButtonBase__Ellipsis-sc-6hgm97-5 djuWLZ">Load More</span></span></button></div><a href="https://elfsight.com/social-feed-widget/?utm_source=websites&amp;utm_medium=clients&amp;utm_content=social-feed&amp;utm_term=web.flyreklam.com&amp;utm_campaign=free-widget" target="_blank" style="animation: 0s ease 0s 1 normal none running none; background: url(&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNC4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0i0KHQu9C+0LlfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA2IDUuOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNiA1Ljg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDtmaWxsOiM4MDgwODA7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwYXRoIGlkPSJlbGZzaWdodC1nbHlwaC0xMjAwLWEiIGNsYXNzPSJzdDAiIGQ9Ik0zLjIsMEM0LjgsMCw2LjEsMS40LDYsM2MwLDEuNi0xLjQsMi44LTMsMi44cy0yLjgtMS40LTIuOC0zYzAtMC4xLDAtMC4xLDAtMC4yDQoJCWMwLDAsMC4xLTAuMywwLjMtMC4zczAuMywwLjIsMC4zLDAuM3YwLjF2MC4xYzAsMS4zLDEsMi40LDIuMiwyLjRjMS4zLDAsMi40LTEsMi40LTIuMmMwLTEuMy0xLTIuNC0yLjItMi40Yy0wLjEsMC0wLjMsMC0wLjQsMA0KCQlsMCwwYzAsMC0wLjMsMC0wLjQtMC4yUzIuNSwwLDIuNiwwQzIuOCwwLDMsMCwzLjIsMHogTTAuMSwwLjJDMC4yLDAuMiwwLjIsMC4yLDAuMSwwLjJMMC4xLDAuMkwwLjEsMC4ybDMuMSwxLjZsMCwwbDAsMGwwLDBsMCwwDQoJCUMzLjYsMiwzLjcsMi4yLDMuNywyLjVsMCwwbDAsMGwwLDBsMCwwdjAuOWMwLDAuMiwwLDAuMywwLDAuNGwwLDBsMCwwYzAsMC4xLDAsMC4yLTAuMSwwLjJjMCwwLDAsMC0wLjEsMGwwLDBsMCwwTDIuOCwzLjZsMCwwDQoJCUMyLjUsMy40LDIuNCwzLjIsMi40LDIuOWwwLDBjMC0wLjIsMC0wLjUtMC40LTAuOEMxLjMsMS42LDAuMiwwLjYsMCwwLjVsMCwwbDAsMGwwLDBsMCwwVjAuNEMwLDAuMywwLjEsMC4yLDAuMSwwLjJ6Ii8+DQo8L2c+DQo8L3N2Zz4NCg==&quot;) 8px center / 16px 16px no-repeat rgba(238, 238, 238, 0.9); border: none; inset: auto auto auto 50%; color: rgba(0, 0, 0, 0.5); display: inline-block; float: none; height: 28px; margin: 8px auto; opacity: 1; padding: 6px 6px 6px 32px; position: relative; transform: translateX(-50%); zoom: 1; visibility: visible; box-sizing: border-box; border-radius: 6px; font-family: Roboto, Arial, sans-serif; font-size: 12px; font-weight: 700; line-height: 16px; text-align: left; text-decoration: none; max-width: 240px; text-indent: 0px; z-index: 99999;">Free Social Feed widget <div style="align-items: center; justify-content: center; border-radius: 12px; box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px; width: 20px; height: 20px; overflow: hidden; position: absolute; right: -10px; top: -10px; background: rgb(249, 50, 98); display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 10 10" style="display: block; pointer-events: none;"><path fill="#ffffff" d="M6.01 5l3.78 3.78a.714.714 0 1 1-1.01 1.01L5 6.01 1.22 9.79A.714.714 0 1 1 .21 8.78L3.99 5 .21 1.22A.714.714 0 0 1 1.22.21L5 3.99 8.78.21a.714.714 0 0 1 1.01 1.01L6.01 5z"></path></svg></div></a></div></div></div></div></div></div>
+            </div>
+        </section><!-- End About Section -->
+        <!-- ======= Features Section ======= -->
+        <!-- End Features Section -->
+        <!-- ======= Counts Section ======= -->
+        <section id="counts" class="counts" style="">
+            <div class="container">
+                <div class="row" data-aos="fade-up">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="count-box">
+                            <i class="icofont-simple-smile"></i>
+                            <span data-toggle="counter-up">232</span>
+                            <p>ALICI VE SATICILAR</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+                        <div class="count-box">
+                            <i class="icofont-document-folder"></i>
+                            <span data-toggle="counter-up">1.521</span>
+                            <p>İlanlar</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                        <div class="count-box">
+                            <i class="icofont-live-support"></i>
+                            <span data-toggle="counter-up">63</span>
+                            <p>Cevaplanan sorular</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                        <div class="count-box">
+                            <i class="icofont-users-alt-5"></i>
+                            <span data-toggle="counter-up">7</span>
+                            <p>Çalışanlar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Counts Section -->
+        <!-- ======= Details Section ======= -->
+        <!-- End Details Section -->
+        <!-- ======= Gallery Section ======= -->
+        <!-- End Gallery Section -->
+        <!-- ======= Testimonials Section ======= -->
+        <!-- End Testimonials Section -->
+        <!-- ======= Team Section ======= -->
+        <!-- End Team Section -->
+        <!-- ======= Pricing Section ======= -->
+        <section id="pricing" class="pricing" style="background-color: rgb(255, 255, 255);">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <p></p>
+                    <div style="text-align: center;">
+                        <div style="text-align: left;"><span style="font-size: 1rem;"><span style="color: rgb(1, 4, 131); font-family: Poppins, sans-serif; font-size: 36px; font-weight: 700; text-transform: uppercase; background-color: rgb(245, 245, 255);">
+                                    <div style="text-align: center;">BİR VİTRİN İLANI İLE TÜM ŞEHİRLERDE FARK EDİLİR OLUN!</div>
+                                </span></span></div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="row" data-aos="fade-left">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="box" data-aos="zoom-in" data-aos-delay="100" style="">
+                            <h3>Süper Doping 1 GÜN</h3>
+                            <h4>5 TL<span></span></h4>
+                            <ul>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="https://dl.kibsell.com/" class="btn-buy" download="İndir">Şimdi satın al</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+                        <div class="box featured" data-aos="zoom-in" data-aos-delay="200">
+                            <h3 style="">Süper Doping 1 HAFTA</h3>
+                            <h4>
+                                <div style="text-align: center;"><span style="color: rgb(26, 204, 141); font-size: 36px; font-weight: 600;">34,99 TL</span><span style="max-width: none; max-height: none; width: 83.1875px; height: 18.1562px;">&nbsp;</span></div><span style="color: rgb(32, 33, 36); font-family: arial, sans-serif; font-size: 14px; text-align: left;"></span>
+                            </h4>
+                            <ul>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="https://dl.kibsell.com/" class="btn-buy">Şimdi satın al</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                        <div class="box" data-aos="zoom-in" data-aos-delay="300" style="">
+                            <h3>Süper Doping 1 AY</h3>
+                            <h4>50 TL</h4>
+                            <ul>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="https://dl.kibsell.com/" class="btn-buy">Şimdi satın al</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                        <div class="box" data-aos="zoom-in" data-aos-delay="400" style="">
+                            <span class="advanced">Kampanya</span>
+                            <h3 style="">Süper Doping 1 YIL</h3>
+                            <h4 class="" style=""><sup></sup>294,99</h4>
+                            <ul>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="https://dl.kibsell.com/" class="btn-buy">Şimdi satın al</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-header" style="">
+                <h1>
+                    <div style="text-align: center;"><b><span style="font-size: 2.5rem;"></span><small></small></b></div>
+                </h1>
+            </div>
+            <h2 style="">
+                <div style="text-align: right;"></div>
+            </h2>
+        </section><!-- End Pricing Section -->
+        <!-- ======= F.A.Q Section ======= -->
+        <!-- End F.A.Q Section -->
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact" style="background-color: rgb(255, 255, 255);">
+            <div class="container" style="">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>İLETİŞİM</h2>
+                    <p>BİZE ULAŞIN</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+                        <div class="info">
+                            <div class="address">
+                                <i class="icofont-google-map"></i>
+                                <h4>Konum:</h4>
+                                <p><span style="color: rgb(85, 85, 85); font-family: OpenSans;"><b>İncili Pınar, Prof. Muammer Aksoy Blv. No:43/F, 27080</b></span></p>
+                            </div>
+                            <div class="email">
+                                <i class="icofont-envelope"></i>
+                                <h4>E-Posta:</h4>
+                                <p><b>info@kibsell.com</b></p>
+                            </div>
+                            <div class="phone">
+                                <i class="icofont-phone"></i>
+                                <h4>Arayın:</h4>
+                                <p><b>0542 129 27 27</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
+                        <form action="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/default-form-handler" method="post" role="form" class="php-email-form">
+                            <div class="form-row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Adınız" data-rule="minlen:4" data-msg="Lütfen en az 4 karakter girin">
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="E-posta adresiniz" data-rule="email" data-msg="Lütfen geçerli eposta adresini giriniz">
+                                    <div class="validate"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Konu" data-rule="minlen:4" data-msg="Lütfen en az 8 konu tablosu girin">
+                                <div class="validate"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Lütfen bizim için bir şeyler yaz" placeholder="Mesaj"></textarea>
+                                <div class="validate"></div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="loading">Yükleniyor</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Mesajınız gönderildi. Teşekkür ederim!</div>
+                            </div>
+                            <div class="text-center"><button type="submit">Mesaj Gönder</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Contact Section -->
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer" style="background-color: rgb(0, 0, 0);">
+        <div class="footer-top" style="background-color: rgb(0, 0, 0);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-info" style="background-color: rgb(0, 0, 0);">
+                            <h3>Kibsell Pazar Yeri<br></h3>
+                            <div><span style="font-weight: bolder; color: rgb(85, 85, 85); font-family: OpenSans; text-align: left; background-color: rgb(0, 0, 0);">Pzt-Cmt 08: 00-18: 00</span><br></div>
+                            <div class="btn-group" role="group" aria-label="Basic example" style="">
+                            </div>
+                            <div class="social-links mt-3">
+                                <a href="https://www.facebook.com/kibsellcom" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="https://www.facebook.com/kibsellcom" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="https://www.instagram.com/kibsell/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="https://tr.linkedin.com/in/kibsell-al%C4%B1m-sat%C4%B1m-500b17203" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Kısayol Link</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#about">Hakkımızda</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#pricing">Kullanım Şartları</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="gizlilikpolitikasi.html">Gizlilik Politikası</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Hizmetler</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Yardım</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">S.S.S</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Doping</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Bültenimiz</h4>
+                        <p>Bizi Takip edin ve habersiz kalmayın.</p>
+                        <form action="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/default-form-handler" method="post" style="background-image: linear-gradient(rgb(255, 255, 255) 0%, rgb(243, 243, 243) 50%, rgb(237, 237, 237) 51%, rgb(255, 255, 255) 100%);">
+                            <input type="email" name="email"><input type="submit" value="ABONE OL">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                © Copyright <strong><span>Kibsell</span></strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <a href="#" class="back-to-top" style="opacity: 0.655822; display: none;"><i class="icofont-simple-up"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/vendor/venobox/venobox.min.js"></script>
+    <script src="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/vendor/counterup/counterup.min.js"></script>
+    <script src="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/vendor/aos/aos.js"></script>
+    <!-- Template Main JS File -->
+    <script src="https://kibsell.com/storage/projects/3/MjkkhoygCh1mInX3R4LVQxs9pAkxK4JXiddQ/assets/js/main.js"></script><nav class="mobile-nav d-lg-none">
+                <ul>
+                    <li class=""><a href="index.html">KEŞFET</a></li>
+                    <li class=""><a href="#about">HAKKIMIZDA</a></li>
+                    <li class=""></li>
+                    <li></li>
+                    <li></li>
+                    <li class=""><a href="#pricing">PAKETLER</a></li>
+                    <li class="drop-down">
+                        <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li class="drop-down"><a href="#">Drop Down 2</a>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                            <li><a href="#">Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="#contact">İLETİŞİM</a></li>
+                </ul>
+            </nav><div class="mobile-nav-overly"></div>
+    <nav class="mobile-nav d-lg-none">
+        <ul>
+            <li class=""><a href="index.html">KEŞFET</a></li>
+            <li class="active"><a href="#about">HAKKIMIZDA</a></li>
+            <li class=""></li>
+            <li></li>
+            <li></li>
+            <li class=""><a href="#pricing">PAKETLER</a></li>
+            <li class="drop-down">
+                <ul>
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li class="drop-down"><a href="#">Drop Down 2</a>
+                        <ul>
+                            <li><a href="#">Deep Drop Down 1</a></li>
+                            <li><a href="#">Deep Drop Down 2</a></li>
+                            <li><a href="#">Deep Drop Down 3</a></li>
+                            <li><a href="#">Deep Drop Down 4</a></li>
+                            <li><a href="#">Deep Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drop Down 3</a></li>
+                    <li><a href="#">Drop Down 4</a></li>
+                    <li><a href="#">Drop Down 5</a></li>
+                </ul>
+            </li>
+            <li class=""><a href="#contact">İLETİŞİM</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav-overly"></div>
+    <nav class="mobile-nav d-lg-none">
+        <ul>
+            <li class="active"><a href="index.html">KEŞFET</a></li>
+            <li class=""><a href="#about">HAKKIMIZDA</a></li>
+            <li class=""></li>
+            <li></li>
+            <li></li>
+            <li class=""><a href="#pricing">PAKETLER</a></li>
+            <li class="drop-down">
+                <ul>
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li class="drop-down"><a href="#">Drop Down 2</a>
+                        <ul>
+                            <li><a href="#">Deep Drop Down 1</a></li>
+                            <li><a href="#">Deep Drop Down 2</a></li>
+                            <li><a href="#">Deep Drop Down 3</a></li>
+                            <li><a href="#">Deep Drop Down 4</a></li>
+                            <li><a href="#">Deep Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drop Down 3</a></li>
+                    <li><a href="#">Drop Down 4</a></li>
+                    <li><a href="#">Drop Down 5</a></li>
+                </ul>
+            </li>
+            <li class=""><a href="#contact">İLETİŞİM</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav-overly"></div>
+    <nav class="mobile-nav d-lg-none">
+        <ul>
+            <li class=""><a href="index.html">KEŞFET</a></li>
+            <li class=""><a href="#about">HAKKIMIZDA</a></li>
+            <li class=""></li>
+            <li></li>
+            <li></li>
+            <li class=""><a href="#pricing">PAKETLER</a></li>
+            <li class="drop-down">
+                <ul>
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li class="drop-down"><a href="#">Drop Down 2</a>
+                        <ul>
+                            <li><a href="#">Deep Drop Down 1</a></li>
+                            <li><a href="#">Deep Drop Down 2</a></li>
+                            <li><a href="#">Deep Drop Down 3</a></li>
+                            <li><a href="#">Deep Drop Down 4</a></li>
+                            <li><a href="#">Deep Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drop Down 3</a></li>
+                    <li><a href="#">Drop Down 4</a></li>
+                    <li><a href="#">Drop Down 5</a></li>
+                </ul>
+            </li>
+            <li class=""><a href="#contact">İLETİŞİM</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav-overly"></div>
+    <nav class="mobile-nav d-lg-none">
+        <ul>
+            <li class=""><a href="index.html">KEŞFET</a></li>
+            <li class=""><a href="#about">HAKKIMIZDA</a></li>
+            <li class=""></li>
+            <li></li>
+            <li></li>
+            <li class=""><a href="#pricing">PAKETLER</a></li>
+            <li class="drop-down">
+                <ul>
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li class="drop-down"><a href="#">Drop Down 2</a>
+                        <ul>
+                            <li><a href="#">Deep Drop Down 1</a></li>
+                            <li><a href="#">Deep Drop Down 2</a></li>
+                            <li><a href="#">Deep Drop Down 3</a></li>
+                            <li><a href="#">Deep Drop Down 4</a></li>
+                            <li><a href="#">Deep Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drop Down 3</a></li>
+                    <li><a href="#">Drop Down 4</a></li>
+                    <li><a href="#">Drop Down 5</a></li>
+                </ul>
+            </li>
+            <li class=""><a href="#contact">İLETİŞİM</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav-overly"></div>
+    <nav class="mobile-nav d-lg-none">
+        <ul>
+            <li class=""><a href="index.html">KEŞFET</a></li>
+            <li class="active"><a href="#about">HAKKIMIZDA</a></li>
+            <li class=""></li>
+            <li></li>
+            <li></li>
+            <li class=""><a href="#pricing">PAKETLER</a></li>
+            <li class="drop-down">
+                <ul>
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li class="drop-down"><a href="#">Drop Down 2</a>
+                        <ul>
+                            <li><a href="#">Deep Drop Down 1</a></li>
+                            <li><a href="#">Deep Drop Down 2</a></li>
+                            <li><a href="#">Deep Drop Down 3</a></li>
+                            <li><a href="#">Deep Drop Down 4</a></li>
+                            <li><a href="#">Deep Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drop Down 3</a></li>
+                    <li><a href="#">Drop Down 4</a></li>
+                    <li><a href="#">Drop Down 5</a></li>
+                </ul>
+            </li>
+            <li class=""><a href="#contact">İLETİŞİM</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav-overly"></div>
+    <nav class="mobile-nav d-lg-none">
+        <ul>
+            <li class="active"><a href="index.html">KEŞFET</a></li>
+            <li class=""><a href="#about">HAKKIMIZDA</a></li>
+            <li class=""></li>
+            <li></li>
+            <li></li>
+            <li class=""><a href="#pricing">PAKETLER</a></li>
+            <li class="drop-down">
+                <ul>
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li class="drop-down"><a href="#">Drop Down 2</a>
+                        <ul>
+                            <li><a href="#">Deep Drop Down 1</a></li>
+                            <li><a href="#">Deep Drop Down 2</a></li>
+                            <li><a href="#">Deep Drop Down 3</a></li>
+                            <li><a href="#">Deep Drop Down 4</a></li>
+                            <li><a href="#">Deep Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drop Down 3</a></li>
+                    <li><a href="#">Drop Down 4</a></li>
+                    <li><a href="#">Drop Down 5</a></li>
+                </ul>
+            </li>
+            <li class=""><a href="#contact">İLETİŞİM</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav-overly"></div>
+    <nav class="mobile-nav d-lg-none">
+        <ul>
+            <li class=""><a href="index.html">KEŞFET</a></li>
+            <li class=""><a href="#about">HAKKIMIZDA</a></li>
+            <li class=""></li>
+            <li></li>
+            <li></li>
+            <li class=""><a href="#pricing">PAKETLER</a></li>
+            <li class="drop-down">
+                <ul>
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li class="drop-down"><a href="#">Drop Down 2</a>
+                        <ul>
+                            <li><a href="#">Deep Drop Down 1</a></li>
+                            <li><a href="#">Deep Drop Down 2</a></li>
+                            <li><a href="#">Deep Drop Down 3</a></li>
+                            <li><a href="#">Deep Drop Down 4</a></li>
+                            <li><a href="#">Deep Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drop Down 3</a></li>
+                    <li><a href="#">Drop Down 4</a></li>
+                    <li><a href="#">Drop Down 5</a></li>
+                </ul>
+            </li>
+            <li class=""><a href="#contact">İLETİŞİM</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav-overly"></div>
+    <nav class="mobile-nav d-lg-none">
+        <ul>
+            <li class=""><a href="index.html">KEŞFET</a></li>
+            <li class=""><a href="#about">HAKKIMIZDA</a></li>
+            <li class=""></li>
+            <li></li>
+            <li></li>
+            <li class=""><a href="#pricing">PAKETLER</a></li>
+            <li class="drop-down">
+                <ul>
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li class="drop-down"><a href="#">Drop Down 2</a>
+                        <ul>
+                            <li><a href="#">Deep Drop Down 1</a></li>
+                            <li><a href="#">Deep Drop Down 2</a></li>
+                            <li><a href="#">Deep Drop Down 3</a></li>
+                            <li><a href="#">Deep Drop Down 4</a></li>
+                            <li><a href="#">Deep Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drop Down 3</a></li>
+                    <li><a href="#">Drop Down 4</a></li>
+                    <li><a href="#">Drop Down 5</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="#contact">İLETİŞİM</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav-overly" style="display: none;"></div>
+    <nav class="mobile-nav d-lg-none">
+        <ul>
+            <li class=""><a href="index.html">KEŞFET</a></li>
+            <li class=""><a href="#about">HAKKIMIZDA</a></li>
+            <li class=""></li>
+            <li></li>
+            <li></li>
+            <li class=""><a href="#pricing">PAKETLER</a></li>
+            <li class="drop-down">
+                <ul>
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li class="drop-down"><a href="#">Drop Down 2</a>
+                        <ul>
+                            <li><a href="#">Deep Drop Down 1</a></li>
+                            <li><a href="#">Deep Drop Down 2</a></li>
+                            <li><a href="#">Deep Drop Down 3</a></li>
+                            <li><a href="#">Deep Drop Down 4</a></li>
+                            <li><a href="#">Deep Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drop Down 3</a></li>
+                    <li><a href="#">Drop Down 4</a></li>
+                    <li><a href="#">Drop Down 5</a></li>
+                </ul>
+            </li>
+            <li class=""><a href="#contact">İLETİŞİM</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav-overly" style="display: none;"></div>
+    <nav class="mobile-nav d-lg-none">
+        <ul>
+            <li class=""><a href="index.html">KEŞFET</a></li>
+            <li class=""><a href="#about">HAKKIMIZDA</a></li>
+            <li class=""></li>
+            <li></li>
+            <li></li>
+            <li class=""><a href="#pricing">PAKETLER</a></li>
+            <li class="drop-down">
+                <ul>
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li class="drop-down"><a href="#">Drop Down 2</a>
+                        <ul>
+                            <li><a href="#">Deep Drop Down 1</a></li>
+                            <li><a href="#">Deep Drop Down 2</a></li>
+                            <li><a href="#">Deep Drop Down 3</a></li>
+                            <li><a href="#">Deep Drop Down 4</a></li>
+                            <li><a href="#">Deep Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drop Down 3</a></li>
+                    <li><a href="#">Drop Down 4</a></li>
+                    <li><a href="#">Drop Down 5</a></li>
+                </ul>
+            </li>
+            <li class=""><a href="#contact">İLETİŞİM</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav-overly" style="display: none;"></div>
+    <nav class="mobile-nav d-lg-none">
+        <ul>
+            <li class="active"><a href="index.html">KEŞFET</a></li>
+            <li class=""><a href="#about">HAKKIMIZDA</a></li>
+            <li class=""></li>
+            <li></li>
+            <li></li>
+            <li class=""><a href="#pricing">PAKETLER</a></li>
+            <li class="drop-down">
+                <ul>
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li class="drop-down"><a href="#">Drop Down 2</a>
+                        <ul>
+                            <li><a href="#">Deep Drop Down 1</a></li>
+                            <li><a href="#">Deep Drop Down 2</a></li>
+                            <li><a href="#">Deep Drop Down 3</a></li>
+                            <li><a href="#">Deep Drop Down 4</a></li>
+                            <li><a href="#">Deep Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drop Down 3</a></li>
+                    <li><a href="#">Drop Down 4</a></li>
+                    <li><a href="#">Drop Down 5</a></li>
+                </ul>
+            </li>
+            <li class=""><a href="#contact">İLETİŞİM</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav-overly" style="display: none;"></div>
+    <nav class="mobile-nav d-lg-none">
+        <ul>
+            <li class=""><a href="index.html">KEŞFET</a></li>
+            <li class=""><a href="#about">HAKKIMIZDA</a></li>
+            <li class=""></li>
+            <li></li>
+            <li></li>
+            <li class=""><a href="#pricing">PAKETLER</a></li>
+            <li class="drop-down">
+                <ul>
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li class="drop-down"><a href="#">Drop Down 2</a>
+                        <ul>
+                            <li><a href="#">Deep Drop Down 1</a></li>
+                            <li><a href="#">Deep Drop Down 2</a></li>
+                            <li><a href="#">Deep Drop Down 3</a></li>
+                            <li><a href="#">Deep Drop Down 4</a></li>
+                            <li><a href="#">Deep Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drop Down 3</a></li>
+                    <li><a href="#">Drop Down 4</a></li>
+                    <li><a href="#">Drop Down 5</a></li>
+                </ul>
+            </li>
+            <li class=""><a href="#contact">İLETİŞİM</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav-overly" style="display: none;"></div>
+    <nav class="mobile-nav d-lg-none">
+        <ul>
+            <li class=""><a href="index.html">Keşfet</a></li>
+            <li class=""><a href="#about">Hakkımızda</a></li>
+            <li class=""><a href="#features">Özellikleri</a></li>
+            <li><a href="#gallery">GALERİ</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#pricing">FİYATLANDIRMA</a></li>
+            <li class="drop-down"><a href="">Drop Down</a>
+                <ul>
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li class="drop-down"><a href="#">Drop Down 2</a>
+                        <ul>
+                            <li><a href="#">Deep Drop Down 1</a></li>
+                            <li><a href="#">Deep Drop Down 2</a></li>
+                            <li><a href="#">Deep Drop Down 3</a></li>
+                            <li><a href="#">Deep Drop Down 4</a></li>
+                            <li><a href="#">Deep Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drop Down 3</a></li>
+                    <li><a href="#">Drop Down 4</a></li>
+                    <li><a href="#">Drop Down 5</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav-overly" style="display: none;"></div>
+    <nav class="mobile-nav d-lg-none">
+        <ul>
+            <li class=""><a href="index.html">KEŞFET</a></li>
+            <li class=""><a href="#about">HAKKIMIZDA</a></li>
+            <li class=""><a href="#features">ÖZELLİKLER</a></li>
+            <li><a href="#gallery">GALERİ</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#pricing">PAKETLER</a></li>
+            <li class="drop-down"><a href="">Drop Down</a>
+                <ul>
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li class="drop-down"><a href="#">Drop Down 2</a>
+                        <ul>
+                            <li><a href="#">Deep Drop Down 1</a></li>
+                            <li><a href="#">Deep Drop Down 2</a></li>
+                            <li><a href="#">Deep Drop Down 3</a></li>
+                            <li><a href="#">Deep Drop Down 4</a></li>
+                            <li><a href="#">Deep Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drop Down 3</a></li>
+                    <li><a href="#">Drop Down 4</a></li>
+                    <li><a href="#">Drop Down 5</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav-overly" style="display: none;"></div>
+    <nav class="mobile-nav d-lg-none">
+        <ul>
+            <li class=""><a href="index.html">KEŞFET</a></li>
+            <li class=""><a href="#about">HAKKIMIZDA</a></li>
+            <li class=""><a href="#features">PAKETLER</a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="drop-down">
+                <ul>
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li class="drop-down"><a href="#">Drop Down 2</a>
+                        <ul>
+                            <li><a href="#">Deep Drop Down 1</a></li>
+                            <li><a href="#">Deep Drop Down 2</a></li>
+                            <li><a href="#">Deep Drop Down 3</a></li>
+                            <li><a href="#">Deep Drop Down 4</a></li>
+                            <li><a href="#">Deep Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Drop Down 3</a></li>
+                    <li><a href="#">Drop Down 4</a></li>
+                    <li><a href="#">Drop Down 5</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">İLETİŞİM</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav-overly" style="display: none;"></div>
+    
+    
+
+
+<div><div style="" class="eapp-social-feed-root-layout-component eapps-social-feed-c562afe9-e0da-4693-aed4-23209019cd36-custom-css-hook" id="portal-c562afe9-e0da-4693-aed4-23209019cd36"></div></div><div id="preloader"></div><script id="custom-js" src="js/code_editor_scripts.js?7Fuzt7sz"></script></body></html>
